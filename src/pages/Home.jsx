@@ -1,4 +1,5 @@
 import React from 'react';
+import { Loader } from '../components';
 import { useGetVideoDetailsQuery } from '../redux/services/youtube';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
 
   console.log(data);
+  if (isFetching) return <Loader />;
 
   return <div>Home</div>;
 };
