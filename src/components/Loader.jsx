@@ -4,7 +4,11 @@ import { loader } from '../assets';
 const Loader = () => {
   return (
     <div>
-      <img src={loader} alt="loader" className='rounded-lg w-48 mx-auto mt-24 ' />
+      <img
+        src={loader}
+        alt="loader"
+        className="rounded-lg w-48 mx-auto mt-24 "
+      />
     </div>
   );
 };
