@@ -1,7 +1,7 @@
 import React from 'react';
 import { loader } from '../assets';
 
-const Loader = () => {
+function Loader() {
   return (
     <div>
       <img
@@ -11,6 +11,6 @@ const Loader = () => {
       />
     </div>
   );
-};
+}
 
 export default Loader;
