@@ -1,4 +1,5 @@
+import Loader from './Loader';
+import Navbar from './Navbar';
 import SongCard from './VideoCard';
-import Loader from './Loader'
 
-export { SongCard, Loader };
+export { SongCard, Loader, Navbar };

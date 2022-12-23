@@ -1,15 +1,18 @@
 import React from 'react';
-import { Loader } from '../components';
+import { Loader, Navbar } from '../components';
 import { useGetVideoDetailsQuery } from '../redux/services/youtube';
 
-const Home = () => {
+function Home() {
   const videoid = 'music';
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
 
-  console.log(data);
   if (isFetching) return <Loader />;
 
-  return <div>Home</div>;
-};
+  return (
+    <div className="md:px-5 md:py-4">
+      <Navbar />
+    </div>
+  );
+}
 
 export default Home;
