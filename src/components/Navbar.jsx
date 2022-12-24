@@ -19,7 +19,7 @@ function Navbar() {
           alt="logo of lovely tube"
           className="rounded-lg w-[50px] h-[30px] mt-1"
         />
-        <h2 className="text-3xl ml-1 font-bold ] "> Lovelytube </h2>
+        <h2 className="text-3xl ml-1 font-bold "> Lovelytube </h2>
       </div>
       <SearchBar />
     </motion.nav>

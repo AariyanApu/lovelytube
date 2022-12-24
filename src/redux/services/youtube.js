@@ -12,7 +12,7 @@ export const youtubeApi = createApi({
     // getTopCharts: builder.query({ query: () => '/charts/world' }),
 
     getVideoDetails: builder.query({
-      query: ({ videoid }) => `/search/?key=${apiKey}&part=snippet&order=relevance&q=${videoid}`,
+      query: ({ videoid }) => `/search/?key=${apiKey}&part=snippet&order=relevance&q=${videoid}&maxResults=50`,
     }),
   }),
 });

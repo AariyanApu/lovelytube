@@ -10,7 +10,7 @@ function Home() {
   if (err) return <Error />;
 
   return (
-    <div className="md:px-5 md:py-4 flex flex-wrap">
+    <div className="md:px-5 md:py-4 flex">
       <SlideBar />
       <VideoCard data={data} />
     </div>
