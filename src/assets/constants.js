@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
-import { BsFileEarmarkCode, BsFileEarmarkMusic } from 'react-icons/bs';
 
 import { IoLogoJavascript } from 'react-icons/io';
 import {

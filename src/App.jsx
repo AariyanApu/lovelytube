@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { Navbar, SongCard } from './components';
+import { Navbar, VideoCard } from './components';
 import { Home } from './pages';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          <Route path="/song" element={<SongCard />} />
+          <Route path="/song" element={<VideoCard />} />
         </Routes>
       </BrowserRouter>
     </div>
