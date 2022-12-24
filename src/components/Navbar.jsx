@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { logo } from '../assets';
 import SearchBar from './SearchBar';
+import { navVariants } from '../utils/motion';
 
 function Navbar() {
   return (
-    <div className="flex flex-wrap justify-between">
+    <motion.nav variants={navVariants} initial="hidden" whileInView='show' className="flex flex-wrap justify-between">
       <div className="flex justify-between">
         {' '}
         <img
@@ -15,7 +17,7 @@ function Navbar() {
         <h2 className="text-3xl ml-1 font-bold ] "> Lovelytube </h2>
       </div>
       <SearchBar />
-    </div>
+    </motion.nav>
   );
 }
 
