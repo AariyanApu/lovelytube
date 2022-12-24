@@ -9,6 +9,6 @@
 
 // //  @ add .env
 
-// ! add logo with searchbar
+// // ! add logo with searchbar
 
 // @ add slide bar
