@@ -16,3 +16,5 @@
 // // ! add demo video card
 
 // @ design slide bar
+
+// make video card title smaller base
