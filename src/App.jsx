@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="md:px-5 md:py-4">
+        <div className="px-5 py-4">
           <Navbar />
         </div>
         <Routes>

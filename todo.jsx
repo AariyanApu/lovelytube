@@ -20,3 +20,5 @@
 //! make video card title smaller base
 
 // # style Card
+
+// ! lazy load
