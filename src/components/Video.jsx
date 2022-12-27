@@ -15,8 +15,9 @@ function Video({ video }) {
               />
             </a>
             <div className="p-6">
-              <h5 className="text-gray-900 text-xl font-medium mb-2">
+              <h5 className="text-gray-900 text-base font-medium mb-2">
                 {item?.snippet.title.slice(0, 60)}
+                ...
               </h5>
               <p className="text-gray-700 text-base mb-4">
                 Some quick example text to build
