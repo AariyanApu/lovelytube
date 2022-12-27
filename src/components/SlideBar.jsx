@@ -10,11 +10,11 @@ function SlideBar() {
         const handleClick = () => {};
 
         return (
-          <div className="w-[150px] mr-2 flex gap-1 py-1.5 px-4 hover:bg-gray-100 hover:text-red-600 rounded-lg">
-            <button onClick={handleClick} className="" type="button">
+          <div className="w-[170px] mr-2 flex gap-1 py-1.5 px-4 hover:bg-gray-100 hover:text-red-600 rounded-lg">
+            <SlideBarIcon className="text-2xl mr-1" />
+            <button onClick={handleClick} className="text-lg" type="button">
               {item.name}
             </button>
-            <SlideBarIcon className="mt-1" />
           </div>
         );
       })}

@@ -9,8 +9,8 @@ const VideoCard = ({ data }) => {
   });
 
   return (
-    <div className='ml-4'>
-      <Video video={video} />;
+    <div className="ml-4">
+      <Video video={video} />
     </div>
   );
 };

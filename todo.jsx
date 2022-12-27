@@ -17,4 +17,6 @@
 
 // @ design slide bar
 
-// make video card title smaller base
+//! make video card title smaller base
+
+// # style Card
