@@ -1,4 +1,5 @@
 import React from 'react';
+import { demoThumbnailUrl } from '../assets/constants';
 
 function Video({ video }) {
   return (
@@ -9,7 +10,7 @@ function Video({ video }) {
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
               <img
                 className="rounded-t-lg w-[320px] h-[180px]"
-                src={item?.snippet?.thumbnails.high.url}
+                src={item?.snippet?.thumbnails.high.url || demoThumbnailUrl}
                 alt=""
               />
             </a>

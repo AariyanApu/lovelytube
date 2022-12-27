@@ -11,4 +11,8 @@
 
 // // ! add logo with searchbar
 
-// @ add slide bar
+// // @ add slide bar
+
+// // ! add demo video card
+
+// @ design slide bar
