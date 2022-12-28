@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+
 import Video from './Video';
 
-const VideoCard = ({ data }) => {
+function VideoCard({ data: { items } }) {
   const [video, setVideo] = useState(null);
 
   useEffect(() => {
-    setVideo(data.items);
+    setVideo(items);
   });
 
   return (
@@ -13,6 +14,6 @@ const VideoCard = ({ data }) => {
       <Video video={video} />
     </div>
   );
-};
+}
 
 export default VideoCard;

@@ -11,7 +11,7 @@ function SlideBar() {
         const handleClick = () => {};
 
         return (
-          <div className='mr-2'>
+          <div className="mr-2" key={idx}>
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -29,7 +29,7 @@ function SlideBar() {
                 <SlideBarIcon className="text-xl mr-1" />
                 <button
                   onClick={handleClick}
-                  className="text-base"
+                  className="text-base "
                   type="button"
                 >
                   {item.name}
