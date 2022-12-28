@@ -10,7 +10,7 @@ function VideoCard({ data: { items } }) {
   });
 
   return (
-    <div className="ml-3">
+    <div className="ml-3 ">
       <Video video={video} />
     </div>
   );

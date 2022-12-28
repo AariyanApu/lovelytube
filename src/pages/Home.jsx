@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Error, Loader, SlideBar, VideoCard } from '../components';
 import { useGetVideoDetailsQuery } from '../redux/services/youtube';
 
 function Home() {
-  const videoid = 'music';
+  const [selectedItem, setSelectedItem] = useState('funny');
+
+  const videoid = selectedItem;
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
 
   if (isFetching) return <Loader />;
   if (err) return <Error />;
 
   return (
-    <div className="flex justify-center md:justify-start ">
-      <SlideBar />
+    <div className="flex justify-center md:justify-start mt-4 ">
+      <SlideBar setSelectedItem={setSelectedItem} />
       <VideoCard data={data} />
     </div>
   );

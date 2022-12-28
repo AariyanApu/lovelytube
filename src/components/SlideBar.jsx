@@ -2,13 +2,15 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { categories } from '../assets/constants';
 
-function SlideBar() {
+function SlideBar({ setSelectedItem }) {
+  const handleClick = (e) => {
+    setSelectedItem(e.target.value);
+  };
   return (
     <div className="border-r border-gray-200 hidden lg:block ">
       {categories?.map((item, idx) => {
         const Icon = categories[idx];
         const SlideBarIcon = Icon.icon;
-        const handleClick = () => {};
 
         return (
           <div className="mr-2" key={idx}>
@@ -31,6 +33,7 @@ function SlideBar() {
                   onClick={handleClick}
                   className="text-base "
                   type="button"
+                  value={item.name}
                 >
                   {item.name}
                 </button>
