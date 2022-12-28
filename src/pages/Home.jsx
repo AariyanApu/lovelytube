@@ -3,7 +3,7 @@ import { Error, Loader, SlideBar, VideoCard } from '../components';
 import { useGetVideoDetailsQuery } from '../redux/services/youtube';
 
 function Home() {
-  const [selectedItem, setSelectedItem] = useState('funny');
+  const [selectedItem, setSelectedItem] = useState('Bangla Music');
 
   const videoid = selectedItem;
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });

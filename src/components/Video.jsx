@@ -15,7 +15,7 @@ function Video({ video }) {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <div className="flex flex-wrap gap-3 justify-center lg:justify-start flex-col lg:flex-row">
+      <div className="flex flex-wrap justify-center md:ml-48 lg:ml-0 gap-3  lg:justify-start flex-col lg:flex-row">
         {video?.map((item, idx) => (
           <motion.div whileHover={{ scale: 1.05 }} className="flex">
             <div className="rounded-lg shadow-lg bg-white w-[320px] ">
