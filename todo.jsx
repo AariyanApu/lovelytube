@@ -19,6 +19,9 @@
 
 // //  make video card title smaller base
 
-//  #  style Card
+// //  #  style Card
 
-// ! lazy load
+// // ! lazy load
+
+// ! make slide bar active
+// # make searchbar active
