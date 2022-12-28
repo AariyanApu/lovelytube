@@ -15,10 +15,10 @@
 
 // // ! add demo video card
 
-// @ design slide bar
+// // @ design slide bar
 
-//! make video card title smaller base
+// //  make video card title smaller base
 
-// # style Card
+//  #  style Card
 
 // ! lazy load

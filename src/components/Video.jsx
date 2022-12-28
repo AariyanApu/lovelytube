@@ -1,5 +1,5 @@
 import React from 'react';
-import { demoThumbnailUrl } from '../assets/constants';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Video({ video }) {
   return (
@@ -8,10 +8,10 @@ function Video({ video }) {
         <div className="flex" key={idx}>
           <div className="rounded-lg shadow-lg bg-white w-[320px] ">
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-              <img
-                className="rounded-t-lg w-[320px] h-[180px]"
-                src={item?.snippet?.thumbnails.high.url || demoThumbnailUrl}
-                alt=""
+              <LazyLoadImage
+                className="rounded-t-lg w-[360px] h-[200px]"
+                src={item?.snippet?.thumbnails?.high?.url}
+                alt="Video Thumbnails"
               />
             </a>
             <div className="p-6">
