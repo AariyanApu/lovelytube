@@ -1,5 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
 
 function Video({ video }) {
@@ -17,6 +18,7 @@ function Video({ video }) {
                 className="rounded-t-lg w-[360px] h-[200px]"
                 src={item?.snippet?.thumbnails?.high?.url}
                 alt="Video Thumbnails"
+                effect="blur"
               />
             </Link>
 

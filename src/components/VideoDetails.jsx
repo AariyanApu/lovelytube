@@ -6,13 +6,15 @@ function VideoDetails() {
   const { id } = useParams();
 
   return (
-    <div className="h-48 w-80">
+    <div className="">
       <ReactPlayer
         url={`https://www.youtube.com/watch?v=${id}`}
         controls={true}
         playing={true}
         loop={true}
         playIcon
+        width="640px"
+        height="360px"
       />
     </div>
   );

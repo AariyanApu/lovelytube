@@ -6,7 +6,7 @@ import { Home } from './pages';
 
 function App() {
   return (
-    <div>
+    <div className="md:p-4 pt-4">
       <BrowserRouter>
         <div className="px-5 py-4">
           <Navbar />

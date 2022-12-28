@@ -26,9 +26,9 @@ function Navbar() {
           <img
             src={logo}
             alt="logo of lovely tube"
-            className="rounded-lg w-12 h-8 lg:w-[50px] lg:h-[30px] md:w-[40px] md:h-[25px] md:mt-1"
+            className="rounded-lg w-12 h-8 lg:w-[50px] lg:h-[30px] md:w-[40px] md:h-[25px] md:mt-0.5"
           />
-          <h2 className=" text-2xl md:text-3xl ml-1 font-bold ">Lovelytube</h2>
+          <h2 className=" text-lg md:text-2xl ml-1 font-bold uppercase">Lovelytube</h2>
         </motion.div>
       </Link>
 
