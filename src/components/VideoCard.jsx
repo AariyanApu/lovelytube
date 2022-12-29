@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import Video from './Video';
 
-function VideoCard({ data: { items }, style }) {
+function VideoCard({ data: { items }, direction }) {
   const [video, setVideo] = useState(null);
+
 
 
   useEffect(() => {

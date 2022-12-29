@@ -4,8 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
 
-function Video({ video ,style}) {
-  console.log(style);
+function Video({ video }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}

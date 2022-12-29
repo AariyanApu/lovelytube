@@ -17,7 +17,7 @@ function VideoDetails() {
   if (err) return <Error />;
 
   return (
-    <div className="flex   flex-col  lg:flex-row  justify-between p-5">
+    <div className="flex  flex-col  lg:flex-row  justify-between p-5">
       <div className="h-[45vh]  lg:h-[77vh] w-full mb-5">
         <ReactPlayer
           url={`https://www.youtube.com/watch?v=${id}`}
