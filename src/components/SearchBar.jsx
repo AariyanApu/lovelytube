@@ -22,7 +22,7 @@ function SearchBar() {
 
         <div className="relative">
           <input
-            className=" w-28 h-8 lg:w-[600px] lg:h-11 md:w-[250px]  p-4 md:pl-10 text-sm text-[#F02262] border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#F02262] focus:border-[#F02262] focus:outline-none"
+            className=" w-28 h-8 sm:w-48 md:w-72 lg:w-[600px] lg:h-11  p-4 md:pl-10 text-sm text-[#F02262] border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#F02262] focus:border-[#F02262] focus:outline-none"
             placeholder="Search ... "
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
