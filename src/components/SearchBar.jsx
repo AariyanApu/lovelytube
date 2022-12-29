@@ -1,15 +1,21 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearchTerm('');
-    console.log("i am clicked")
+    if(searchTerm){
+      navigate(`/search/${searchTerm}`)
+      setSearchTerm('');
+    }
+
+
   };
-console.log(searchTerm);
+
   return (
     <motion.div whileTap={{ scale: 0.9 }}>
       <form onSubmit={handleSubmit}>
@@ -32,7 +38,7 @@ console.log(searchTerm);
           />
 
           <button type='button' className="absolute right-2.5 bottom-2 md:bottom-3 flex items-center pl-3 pointer-events-none cursor-pointer">
-            <BsSearch type='button'/>
+            <BsSearch />
           </button>
         </div>
       </form>

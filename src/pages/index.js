@@ -1,4 +1,4 @@
 import Home from './Home';
-import SearchPage from './SearchPage';
+import SearchFeed from './SearchFeed';
 
-export { Home, SearchPage };
+export { Home, SearchFeed };
