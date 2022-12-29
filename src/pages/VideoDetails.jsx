@@ -12,7 +12,6 @@ function VideoDetails() {
         controls={true}
         playing={true}
         loop={true}
-        playIcon
         width="640px"
         height="360px"
       />
