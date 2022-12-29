@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import Video from './Video';
 
-function VideoCard({ data: { items } }) {
+function VideoCard({ data: { items }, style }) {
   const [video, setVideo] = useState(null);
+
 
   useEffect(() => {
     return ()=> setVideo(items);
@@ -11,7 +12,7 @@ function VideoCard({ data: { items } }) {
 
   return (
     <div className="ml-3 ">
-      <Video video={video} />
+      <Video video={video}  />
     </div>
   );
 }

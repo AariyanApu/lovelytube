@@ -12,9 +12,14 @@ export const youtubeApi = createApi({
     // getTopCharts: builder.query({ query: () => '/charts/world' }),
 
     getVideoDetails: builder.query({
-      query: ({ videoid }) => `/search/?key=${apiKey}&part=snippet&order=relevance&q=${videoid}&maxResults=50`,
+      query: ({ videoid }) =>
+        `/search/?key=${apiKey}&part=snippet&order=relevance&q=${videoid}&maxResults=50`,
+    }),
+    getRelatedVideoDetails: builder.query({
+      query: ({ relatedid }) =>
+        `/search/?key=${apiKey}&part=snippet&maxResults=25&regionCode=BD&relatedToVideoId=${relatedid}&safeSearch=none&type=video`,
     }),
   }),
 });
 
-export const { useGetVideoDetailsQuery } = youtubeApi;
+export const { useGetVideoDetailsQuery, useGetRelatedVideoDetailsQuery } = youtubeApi;

@@ -4,7 +4,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
 
-function Video({ video }) {
+function Video({ video ,style}) {
+  console.log(style);
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -15,7 +16,7 @@ function Video({ video }) {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <div className="flex flex-wrap justify-center md:ml-48 lg:ml-0 gap-3  lg:justify-start flex-col lg:flex-row">
+      <div className="flex flex-wrap justify-center md:ml-48 lg:ml-0 gap-3  lg:justify-start flex-col style   ">
         {video?.map((item, idx) => (
           <motion.div whileHover={{ scale: 1.05 }} className="flex" key={idx}>
             <div className="rounded-lg shadow-lg bg-white w-[320px]  ">
