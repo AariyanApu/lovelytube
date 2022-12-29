@@ -17,13 +17,9 @@ function Video({ video }) {
     >
       <div className="flex flex-wrap justify-center md:ml-48 lg:ml-0 gap-3  lg:justify-start flex-col lg:flex-row">
         {video?.map((item, idx) => (
-          <motion.div whileHover={{ scale: 1.05 }} className="flex">
-            <div className="rounded-lg shadow-lg bg-white w-[320px] ">
-              <Link
-                to={`/video/${item?.id.videoId}`}
-                data-mdb-ripple="true"
-                data-mdb-ripple-color="light"
-              >
+          <motion.div whileHover={{ scale: 1.05 }} className="flex" key={idx}>
+            <div className="rounded-lg shadow-lg bg-white w-[320px]  ">
+              <Link to={`/video/${item?.id.videoId}`}>
                 <LazyLoadImage
                   className="rounded-t-lg w-[360px] h-[200px]"
                   src={item?.snippet?.thumbnails?.high?.url}

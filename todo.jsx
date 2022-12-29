@@ -23,5 +23,6 @@
 
 // // ! lazy load
 
-// ! make slide bar active
+// //  ! make slide bar active
+
 // # make searchbar active

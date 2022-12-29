@@ -6,8 +6,8 @@ function VideoCard({ data: { items } }) {
   const [video, setVideo] = useState(null);
 
   useEffect(() => {
-    setVideo(items);
-  });
+    return ()=> setVideo(items);
+  },[]);
 
   return (
     <div className="ml-3 ">

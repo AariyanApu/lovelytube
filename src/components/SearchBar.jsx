@@ -7,8 +7,9 @@ function SearchBar() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchTerm('');
+    console.log("i am clicked")
   };
-
+console.log(searchTerm);
   return (
     <motion.div whileTap={{ scale: 0.9 }}>
       <form onSubmit={handleSubmit}>
@@ -30,9 +31,9 @@ function SearchBar() {
             type="text"
           />
 
-          <div className="absolute right-2.5 bottom-2 md:bottom-3 flex items-center pl-3 pointer-events-none">
-            <BsSearch />
-          </div>
+          <button type='button' className="absolute right-2.5 bottom-2 md:bottom-3 flex items-center pl-3 pointer-events-none cursor-pointer">
+            <BsSearch type='button'/>
+          </button>
         </div>
       </form>
     </motion.div>
