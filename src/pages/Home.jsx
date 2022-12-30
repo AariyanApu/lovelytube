@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="flex justify-center md:justify-start mt-4 ">
       <SlideBar setSelectedItem={setSelectedItem} />
-      <VideoCard data={data} />
+     <h1> heloo arru</h1>
     </div>
   );
 }
