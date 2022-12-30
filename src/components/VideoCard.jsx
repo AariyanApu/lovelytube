@@ -14,9 +14,17 @@ function VideoCard({ data: { items }, direction }) {
     return () => setVideo(items);
   }, []);
 
+
+  console.log(video)
+
   return (
     <div className="ml-3 ">
-      <motion.div
+
+
+<h1> hello</h1>
+{video?.map((item)=>(<h1>{item.snippet.title}</h1>))}
+
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -57,7 +65,7 @@ function VideoCard({ data: { items }, direction }) {
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
