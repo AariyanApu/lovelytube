@@ -30,7 +30,7 @@ function VideoDetails() {
         />
       </div>
 
-      <VideoCard data={data} />
+      <VideoCard data={data} direction={"md:flex-col"} />
     </div>
   );
 }
