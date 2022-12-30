@@ -14,7 +14,7 @@ function VideoCard({ data: { items }, direction }) {
     return () => setVideo(items);
   }, []);
 
-  console.log();
+  console.log(video);
 
 
   return (
