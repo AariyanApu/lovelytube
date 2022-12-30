@@ -14,14 +14,15 @@ function VideoCard({ data: { items }, direction }) {
     return () => setVideo(items);
   }, []);
 
+  console.log();
 
-  console.log(video)
 
   return (
     <div className="ml-3 ">
 
 
 <h1> hello</h1>
+<h2>{video[2].snippet.title }</h2>
 {video?.map((item)=>(<h1>{item.snippet.title}</h1>))}
 
       {/* <motion.div
