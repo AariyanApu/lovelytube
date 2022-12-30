@@ -22,7 +22,7 @@ function VideoCard({ data: { items }, direction }) {
 
 
 <h1> hello</h1>
-<h2>{video[2].snippet.title }</h2>
+<h2>{video[2]?.snippet.title }</h2>
 {video?.map((item)=>(<h1>{item.snippet.title}</h1>))}
 
       {/* <motion.div
