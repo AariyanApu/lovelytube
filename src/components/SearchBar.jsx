@@ -37,7 +37,7 @@ function SearchBar() {
             type="text"
           />
 
-          <button type='button' className="absolute right-2.5 bottom-2 md:bottom-3 flex items-center pl-3 pointer-events-none cursor-pointer">
+          <button type='submit' className="absolute right-2.5 bottom-2 md:bottom-3 pr-2  ">
             <BsSearch />
           </button>
         </div>
