@@ -12,7 +12,7 @@ function VideoDetails() {
     relatedid,
   });
 
-  console.log(data);
+ 
   if (isFetching) return <Loader />;
   if (err) return <Error />;
 

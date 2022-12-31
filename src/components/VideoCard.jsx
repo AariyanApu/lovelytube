@@ -5,12 +5,12 @@ import Video from './Video';
 
 function VideoCard({ data: { items }, direction }) {
   const [video, setVideo] = useState(null);
-  console.log(video);
+ 
   useEffect(() => {
     return () => setVideo(items);
   }, []);
 
-  console.log(video);
+
 
   return (
     <div className="ml-3 ">

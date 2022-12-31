@@ -8,6 +8,8 @@ function Home() {
   const videoid = selectedItem;
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
 
+  console.log(data);
+
   if (isFetching) return <Loader />;
   if (err) return <Error />;
 
@@ -15,6 +17,7 @@ function Home() {
     <div className="flex justify-center md:justify-start mt-4 ">
       <SlideBar setSelectedItem={setSelectedItem} />
      <VideoCard data={data} />
+
     </div>
   );
 }

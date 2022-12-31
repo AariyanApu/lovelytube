@@ -8,7 +8,6 @@ const SearchFeed = () => {
   const videoid = id;
 
   const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
-  console.log(data);
   if (isFetching) return <Loader />;
   if (err) return <Error />;
   return (
