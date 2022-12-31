@@ -8,7 +8,7 @@ function VideoCard({ data: { items }, direction }) {
   console.log(video);
   useEffect(() => {
     return () => setVideo(items);
-  });
+  }, []);
 
   console.log(video);
 

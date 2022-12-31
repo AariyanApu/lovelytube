@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 const Video = ({ video }) => {
   return (
     <>
-      {video?.map((item, idx) => (
+
+        {video?.map((item,idx)=><div>{idx}</div>)}
+
+
+      {/* {video?.map((item, idx) => (
         <motion.div whileHover={{ scale: 1.05 }} className="flex" key={idx}>
           <div className="rounded-lg shadow-lg bg-white w-[320px]  ">
             <Link to={`/video/${item?.id.videoId}`}>
@@ -36,7 +40,7 @@ const Video = ({ video }) => {
             </div>
           </div>
         </motion.div>
-      ))}
+      ))} */}
     </>
   );
 };
