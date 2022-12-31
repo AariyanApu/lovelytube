@@ -3,12 +3,13 @@ import React, { useEffect, useState } from 'react';
 
 import Video from './Video';
 
-function VideoCard({ data: { items } }) {
-  useEffect(() => {
-    setVideo(items);
-  }, []);
-
+function VideoCard({ data: { items }, dr }) {
   const [video, setVideo] = useState(null);
+  console.log(dr);
+
+  useEffect(() => {
+    return setVideo(items);
+  }, []);
 
   return (
     <div className="ml-3 ">
@@ -22,7 +23,7 @@ function VideoCard({ data: { items } }) {
         }}
       >
         <div
-          className={`flex flex-wrap justify-center gap-3  lg:justify-start  `}
+          className={`flex flex-wrap justify-center gap-3  lg:justify-start flex-col ${!dr && "md:flex-row" }  `}
         >
           <Video video={video} />
         </div>

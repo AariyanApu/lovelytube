@@ -12,7 +12,7 @@ function VideoDetails() {
     relatedid,
   });
 
- 
+
   if (isFetching) return <Loader />;
   if (err) return <Error />;
 
@@ -30,7 +30,7 @@ function VideoDetails() {
         />
       </div>
 
-      <VideoCard data={data} direction={'md:flex-col'} />
+      <VideoCard data={data} dr={true} />
     </div>
   );
 }
