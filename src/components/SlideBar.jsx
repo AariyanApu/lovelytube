@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { categories } from '../assets/constants';
+import Footer from './Footer';
 
 function SlideBar({ setSelectedItem }) {
   const handleClick = (e) => {
@@ -42,6 +43,7 @@ function SlideBar({ setSelectedItem }) {
           </div>
         );
       })}
+      <Footer />
     </div>
   );
 }

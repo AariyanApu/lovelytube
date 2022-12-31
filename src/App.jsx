@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 import { Home, SearchFeed, VideoDetails } from './pages';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
           <Route path="/video/:id" element={<VideoDetails />} />
           <Route path="/search/:id" element={<SearchFeed />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

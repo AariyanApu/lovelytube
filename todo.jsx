@@ -25,4 +25,4 @@
 
 // //  ! make slide bar active
 
-// # make searchbar active
+//  // # make searchbar active
