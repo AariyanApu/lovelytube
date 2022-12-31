@@ -1,17 +1,14 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { Link } from 'react-router-dom';
 import Video from './Video';
 
 function VideoCard({ data: { items }, direction }) {
   const [video, setVideo] = useState(null);
-console.log(video)
+  console.log(video);
   useEffect(() => {
     return () => setVideo(items);
-  }, []);
+  });
 
   console.log(video);
 

@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
 
 const Video = ({ video }) => {
   return (
     <>
-      {' '}
       {video?.map((item, idx) => (
         <motion.div whileHover={{ scale: 1.05 }} className="flex" key={idx}>
           <div className="rounded-lg shadow-lg bg-white w-[320px]  ">
