@@ -26,4 +26,6 @@
 // //  ! make slide bar active
 
 //  // # make searchbar active
-// @ make  serach button active
+// // @ make  search button active
+
+// ! added swiper
