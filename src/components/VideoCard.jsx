@@ -23,7 +23,7 @@ function VideoCard({ data: { items }, dr }) {
         }}
       >
         <div
-          className={`flex flex-wrap justify-center gap-3  lg:justify-start flex-col ${!dr && "md:flex-row" }  `}
+          className={`flex flex-wrap justify-center items-center justify-items-center gap-3  lg:justify-start flex-col ${!dr && "md:flex-row" }  `}
         >
           <Video video={video} />
         </div>
