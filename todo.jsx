@@ -28,4 +28,10 @@
 //  // # make searchbar active
 // // @ make  search button active
 
-// ! added swiper
+// // ! added swiper
+
+// $ add circle at the video card
+
+// ! add video title and description
+
+// % remove loading animation

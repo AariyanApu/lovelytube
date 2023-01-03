@@ -13,7 +13,7 @@ function VideoCard({ data: { items }, dr }) {
 
   return (
     <div className="ml-3 ">
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -21,13 +21,13 @@ function VideoCard({ data: { items }, dr }) {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-      >
+      > */}
         <div
           className={`flex flex-wrap justify-center items-center justify-items-center gap-3  lg:justify-start flex-col ${!dr && "md:flex-row" }  `}
         >
           <Video video={video} />
         </div>
-      </motion.div>
+      {/* </motion.div> */}
     </div>
   );
 }

@@ -3,6 +3,8 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
+import { GoVerified } from 'react-icons/go';
+
 
 const Video = ({ video }) => {
   return (
@@ -29,9 +31,9 @@ const Video = ({ video }) => {
               </Link>
               <Link
                 to={`/channel/${item.snippet.channelId}`}
-                className="text-gray-700 text-xs mt-1"
+                className="text-gray-700 text-xs mt-1 flex gap-3"
               >
-                {item?.snippet.channelTitle}
+                {item?.snippet.channelTitle} <GoVerified className='mt-0.5'/>
               </Link>
             </div>
           </div>
