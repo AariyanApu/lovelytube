@@ -30,15 +30,14 @@ export const demoProfilePicture =
 
 export const categories = [
   { name: 'New', icon: MdOutlineHome },
-
-  { name: 'lovelyweb', icon: MdCode },
-  { name: 'ReactJS', icon: MdCode },
-  { name: 'NextJS', icon: IoLogoJavascript },
+ 
+  { name: 'Bangla Natok', icon: MdOutlineLocalMovies },
   { name: 'Bangla Song', icon: MdMusicNote },
-  { name: '10ms', icon: MdOutlineSchool },
-  { name: 'Podcast', icon: MdOutlinePodcasts },
   { name: 'RG Ent', icon: MdOutlineMovie },
-  { name: 'RNAR', icon: MdOutlineLocalMovies },
+  { name: 'BBC Bangla', icon: MdOutlineLiveTv },
+  { name: 'DW Bangla', icon: MdOutlineLiveTv },
+  { name: 'NextJS', icon: IoLogoJavascript },
+  { name: 'Podcast', icon: MdOutlinePodcasts },
   { name: 'Live', icon: MdOutlineLiveTv },
   { name: 'Sport', icon: MdOutlineSportsCricket },
   { name: 'Pets', icon: MdPets },
