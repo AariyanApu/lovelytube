@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { GoVerified } from 'react-icons/go';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from 'react-router-dom';
-import { GoVerified } from 'react-icons/go';
-
 
 const Video = ({ video }) => {
   return (
@@ -24,7 +23,7 @@ const Video = ({ video }) => {
             <div className="p-5 flex flex-col">
               <Link
                 to={`/video/${item?.id.videoId}`}
-                className="text-gray-900 text-base font-medium mb-2"
+                className="text-gray-900  text-base font-medium mb-2"
               >
                 {item?.snippet?.title.slice(0, 60)}
                 ...
@@ -33,7 +32,7 @@ const Video = ({ video }) => {
                 to={`/channel/${item.snippet.channelId}`}
                 className="text-gray-700 text-xs mt-1 flex gap-3"
               >
-                {item?.snippet.channelTitle} <GoVerified className='mt-0.5'/>
+                {item?.snippet.channelTitle} <GoVerified className="mt-0.5" />
               </Link>
             </div>
           </div>

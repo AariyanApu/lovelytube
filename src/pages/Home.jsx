@@ -6,9 +6,7 @@ function Home() {
   const [selectedItem, setSelectedItem] = useState('New');
 
   const videoid = selectedItem;
-  const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid });
-
-  console.log(data);
+  const { data, isFetching, err } = useGetVideoDetailsQuery({ videoid })
 
   if (isFetching) return <Loader />;
   if (err) return <Error />;
