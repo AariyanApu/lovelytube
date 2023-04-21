@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from 'framer-motion';
 import React from 'react';
 import { categories } from '../assets/constants';
@@ -32,7 +33,7 @@ function SlideBar({ setSelectedItem }) {
                 <SlideBarIcon className="text-xl mr-1" />
                 <button
                   onClick={handleClick}
-                  className="text-base "
+                  className="text-base font-semibold "
                   type="button"
                   value={item.name}
                 >

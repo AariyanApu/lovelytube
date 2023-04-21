@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from 'framer-motion';
 import React from 'react';
 import { GoVerified } from 'react-icons/go';
@@ -23,7 +24,7 @@ const Video = ({ video }) => {
             <div className="p-5 flex flex-col">
               <Link
                 to={`/video/${item?.id.videoId}`}
-                className="text-gray-900  text-base font-medium mb-2"
+                className="text-gray-900  text-base font-normal mb-2"
               >
                 {item?.snippet?.title.slice(0, 60)}
                 ...

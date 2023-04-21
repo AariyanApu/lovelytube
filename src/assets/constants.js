@@ -30,9 +30,9 @@ export const demoProfilePicture =
 
 export const categories = [
   { name: 'New', icon: MdOutlineHome },
- 
-  { name: 'Bangla Natok', icon: MdOutlineLocalMovies },
-  { name: 'Bangla Song', icon: MdMusicNote },
+
+  { name: 'Natok', icon: MdOutlineLocalMovies },
+  { name: 'Song', icon: MdMusicNote },
   { name: 'RG Ent', icon: MdOutlineMovie },
   { name: 'BBC Bangla', icon: MdOutlineLiveTv },
   { name: 'DW Bangla', icon: MdOutlineLiveTv },

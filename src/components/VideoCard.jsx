@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 
 import Video from './Video';
@@ -22,11 +22,13 @@ function VideoCard({ data: { items }, dr }) {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       > */}
-        <div
-          className={`flex flex-wrap justify-center items-center justify-items-center gap-3  lg:justify-start flex-col ${!dr && "md:flex-row" }  `}
-        >
-          <Video video={video} />
-        </div>
+      <div
+        className={`flex flex-wrap justify-center items-center justify-items-center gap-3  lg:justify-start flex-col ${
+          !dr && 'md:flex-row'
+        }  `}
+      >
+        <Video video={video} />
+      </div>
       {/* </motion.div> */}
     </div>
   );

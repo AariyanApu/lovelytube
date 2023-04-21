@@ -6,7 +6,7 @@ import { Home, SearchFeed, VideoDetails } from './pages';
 
 function App() {
   return (
-    <div className="md:p-4 pt-4">
+    <div className="md:p-4 pt-4 mx-auto max-w-screen-3xl">
       <BrowserRouter>
         <div className="px-5 py-4">
           <Navbar />
