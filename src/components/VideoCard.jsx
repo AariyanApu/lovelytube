@@ -5,12 +5,10 @@ import Video from './Video';
 
 function VideoCard({ data: { items }, dr }) {
   const [video, setVideo] = useState(null);
-  console.log(dr);
-
   useEffect(() => {
     return setVideo(items);
   }, []);
-
+  console.log(items);
   return (
     <div className="ml-3 ">
       {/* <motion.div

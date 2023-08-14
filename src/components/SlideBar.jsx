@@ -26,14 +26,14 @@ function SlideBar({ setSelectedItem }) {
               }}
             >
               <motion.div
-                whileHover={{ scale: 1.1 }}
+                // whileHover={{ scale: 1.05, transition: { duration: 0.5 } }}
                 whileTap={{ scale: 0.9 }}
-                className="w-[160px] mr-2 flex gap-1 py-1.5 px-4 hover:bg-gray-100 hover:text-red-600 rounded-lg"
+                className="w-[160px] mr-2 flex gap-1 py-1.5 px-4 hover:bg-gray-100 hover:text-red-600 rounded-lg transition duration-500 ease-in-out"
               >
                 <SlideBarIcon className="text-xl mr-1" />
                 <button
                   onClick={handleClick}
-                  className="text-base font-semibold "
+                  className="text-base font-medium "
                   type="button"
                   value={item.name}
                 >

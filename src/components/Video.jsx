@@ -10,7 +10,11 @@ const Video = ({ video }) => {
   return (
     <>
       {video?.map((item, idx) => (
-        <motion.div whileHover={{ scale: 1.05 }} className="flex" key={idx}>
+        <motion.div
+          whileHover={{ scale: 1.02, transition: { duration: 0.5 } }}
+          className="flex"
+          key={idx}
+        >
           <div className="rounded-lg shadow-lg bg-white w-[320px]  ">
             <Link to={`/video/${item?.id.videoId}`}>
               <LazyLoadImage
@@ -26,7 +30,7 @@ const Video = ({ video }) => {
                 to={`/video/${item?.id.videoId}`}
                 className="text-gray-900  text-base font-normal mb-2"
               >
-                {item?.snippet?.title.slice(0, 60)}
+                {item?.snippet?.title.slice(0, 50)}
                 ...
               </Link>
               <Link

@@ -16,14 +16,18 @@ export const youtubeApi = createApi({
         `/search/?key=${apiKey}&part=snippet&order=relevance&q=${videoid}&maxResults=50`,
     }),
     getRelatedVideoDetails: builder.query({
-      query: ({ relatedid }) =>
-        `/search/?key=${apiKey}&part=snippet&maxResults=25&regionCode=BD&relatedToVideoId=${relatedid}&safeSearch=none&type=video`,
+      query: ({ relatedId }) =>
+        `/search/?key=${apiKey}&part=snippet&maxResults=25&regionCode=BD&relatedToVideoId=${relatedId}&safeSearch=none&type=video`,
     }),
     getRelatedVideoDetailsById: builder.query({
-      query: ({ relatedid }) =>
-        `/videos/?key=${apiKey}&part=snippet&id=${relatedid}`,
+      query: ({ relatedId }) =>
+        `/videos/?key=${apiKey}&part=snippet&id=${relatedId}`,
     }),
   }),
 });
 
-export const { useGetVideoDetailsQuery, useGetRelatedVideoDetailsQuery, useGetRelatedVideoDetailsByIdQuery } = youtubeApi;
+export const {
+  useGetVideoDetailsQuery,
+  useGetRelatedVideoDetailsQuery,
+  useGetRelatedVideoDetailsByIdQuery,
+} = youtubeApi;
