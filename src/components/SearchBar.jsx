@@ -5,19 +5,17 @@ import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(searchTerm){
-      navigate(`/search/${searchTerm}`)
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
       setSearchTerm('');
     }
-
-
   };
 
   return (
-    <motion.div whileTap={{ scale: 0.9 }}>
+    <motion.div whileTap={{ scale: 0.9, transition: { duration: 0.6 } }}>
       <form onSubmit={handleSubmit}>
         <label
           htmlFor="default-search"
@@ -37,7 +35,10 @@ function SearchBar() {
             type="text"
           />
 
-          <button type='submit' className="absolute right-2.5 bottom-2 md:bottom-3 pr-2  ">
+          <button
+            type="submit"
+            className="absolute right-2.5 bottom-2 md:bottom-3 pr-2  "
+          >
             <BsSearch />
           </button>
         </div>
